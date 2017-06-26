@@ -1,0 +1,62 @@
+@import "_reset.scss";
+$block-width:85%;
+
+
+body,button,input,h1,h2,p,label,a{
+	font-family: 'Open Sans';
+}
+
+div,form,section,a {
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	font-size: 14px;
+	margin: 0 auto;
+	background: #F2F3F4;
+}
+ul li {
+	display: inline;
+	margin: 0 30px 0 0;
+}
+
+h2{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+a:hover{
+	cursor:pointer;
+};
+
+.input{
+	padding: 5px 10px;
+}
+
+.select{
+	padding: 10px;
+	background-color: #fff;
+	border: 2px solid #F2F3F4;
+	border-radius: 2px;
+	&:hover{
+		cursor:pointer;
+	}
+	option:hover{
+		background-color: #30AE63;
+	}
+}
+.block{
+	width: $block-width;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+
