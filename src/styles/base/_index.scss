@@ -15,17 +15,16 @@ body{
 	margin: 0 auto;
 	background: #F2F3F4;
 }
-ul li {
-	display: inline;
+.inline {
+	display: inline-block;
 	margin: 0 30px 0 0;
 }
 
-h2{
-	text-align: center;
-	font-size: 24px;
-	font-weight: normal;
-	margin: 10px 0;
+.banner{
+	height: 30px;
+	width: auto;
 }
+
 a:hover{
 	cursor:pointer;
 };
@@ -34,18 +33,6 @@ a:hover{
 	padding: 5px 10px;
 }
 
-.select{
-	padding: 10px;
-	background-color: #fff;
-	border: 2px solid #F2F3F4;
-	border-radius: 2px;
-	&:hover{
-		cursor:pointer;
-	}
-	option:hover{
-		background-color: #30AE63;
-	}
-}
 .block{
 	width: $block-width;
 	margin: 0 auto;
@@ -57,6 +44,7 @@ a:hover{
 .flex{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 

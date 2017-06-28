@@ -17,19 +17,17 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
         include: path.join(__dirname, 'src/script')
       },
       {
         test: /\.scss?$/,
-        loader: ExtractTextPlugin.extract('css!sass'),
-
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader'),
       }
     ]
   },
  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('style.css')
+     new ExtractTextPlugin({filename :'style.css',  allChunks: true})
   ]
 }
 

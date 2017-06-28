@@ -1,18 +1,18 @@
-$button_height:40px;
+$button_height:30px;
 $button_line-height:18px;
 
 .button{
 	display: block;
-	padding: ($button_height - $button_line-height) / 2  0;
+	padding: ($button_height - $button_line-height) / 2  5px;
 	text-align: center;
 	height: $button_height;
-	background-color: #30AE63;
+	background-color: #e53b3b;
 	color: #fff;
 	border-radius: 2px;
 	line-height:$button_line-height;
 	&:hover{
 		cursor:pointer;
-		background-color: #50DB88;
+		background-color: #f46464;
 	};
 	&:disabled{
 		opacity: 0.4;

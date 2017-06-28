@@ -1,3 +1,11 @@
 //change li a
-.header_nav li a:hover {
-  border-bottom: 2px solid #30AE63; }
+.onhover-down:hover {
+  border-bottom: 2px solid #30AE63;
+}
+.header_nav{
+  width: 50%;
+  float: right;
+}
+.header_nav_wrapper{
+  padding: 10px;
+}
