@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
+
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     './src/script/index.jsx'
@@ -23,7 +24,12 @@ module.exports = {
       {
         test: /\.scss?$/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader'),
-      }
+      },
+
+        {
+            test: /\.(png|jpg)$/,
+            loader: 'url-loader'
+        }
     ]
   },
  plugins: [

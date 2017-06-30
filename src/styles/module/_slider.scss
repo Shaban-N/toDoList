@@ -1,34 +1,79 @@
-.baner-block__slider{
-	text-align: center;
-	margin:20px 0;
+.header_slider{
+	width: 100%;
+	position: relative;
 }
-.slider_page{
-position: relative;
-	display: inline-block;
-	margin: 0 5px;
-	label{
-		position: absolute;
-		top:0;
-		left:0;
-		border: 2px solid #30AE63;
-		background: transparent;
-		width:20px;
-		height:20px;
-		border-radius:10px;
-		box-sizing: border-box;
-		&:hover{
-			cursor:pointer;
-		}
-	}
 
-	input {
-		visibility: hidden;
+.slide_wrapper{
+	display: flex;
+
+	align-items:  center;
+	padding: 10%;
+	height: 400px;
+	width: auto;
+}
+
+.slide_header{
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.slide_paragraph{
+	color: #7d8485;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.slider_text{
+	width: 40%;
+	vertical-align: middle;
+}
+
+.left-text{
+	float:left;
+}
+
+.right-text{
+	justify-content: flex-end;
+}
+
+.slide1{
+	background: url("../../static/slide1.png") center no-repeat;
+}
+.slide2{
+	background: url("../../static/slide2.png") center no-repeat;
+}
+.slide3{
+	background: url("../../static/slide3.png") center no-repeat;
+}
+
+.nextArrow {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	cursor: pointer;
+	transition: all ease-in .2s;
+	color: #e53b3b;
+
+	&:hover {
+		opacity: 0.5;
+		transform: scale(1.4);
+		transition: all ease-in .2s;
 	}
-	#first-page:checked+ label{
-			background: #30AE63;
-		}
-	#second-page:checked+ label{
-			background: #30AE63;
-		}
+}
+
+.backArrow {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	cursor: pointer;
+	color: #e53b3b;
 	
+
+	transition: all ease-in .2s;
+
+	&:hover {
+		opacity: 0.5;
+		transform: scale(1.4);
+		transition: all ease-in .2s;
+	}
 }

@@ -1,6 +1,6 @@
 //change li a
 .onhover-down:hover {
-  border-bottom: 2px solid #30AE63;
+  border-bottom: 2px solid #f46464;
 }
 .header_nav{
   width: 50%;
@@ -8,4 +8,14 @@
 }
 .header_nav_wrapper{
   padding: 10px;
+}
+
+.banner{
+  height: 30px;
+  width: auto;
+}
+
+.banner_link{
+  @extend .banner;
+  display: block;
 }
