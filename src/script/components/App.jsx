@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import DropDownMenu from './dropDownMenu.jsx';
+import  Pagination from './Pagination.jsx';
 import Slider from './Slider.jsx';
 
 export default class App extends React.Component {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
                 </div>
 
                 <Slider />
+                <Pagination />
             </section>
         )}
 }
