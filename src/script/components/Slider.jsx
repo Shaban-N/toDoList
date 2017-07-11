@@ -22,7 +22,7 @@ export default class Slider extends Component{
 
     slideOne(){
         return (
-            <div className="slide_wrapper flex slide1">
+            <div className="slide_wrapper flex slide1 ">
                 <div className="slider_text  ">
                     <h2 className="slide_header">Получайте доступ к задачам откуда угодно</h2>
                     <p className="slide_paragraph">С приложениями и расширениями для более чем 10 платформ ваши задачи
@@ -76,7 +76,7 @@ export default class Slider extends Component{
 
     render(){
         return(
-            <div className="header_slider">
+            <div className="header_slider block">
                 { this.state.slideCount === 1 ?  this.slideOne() : null }
                 { this.state.slideCount === 2 ? this.slideTwo() : null }
                 { this.state.slideCount === 3 ? this.slideThree() : null }

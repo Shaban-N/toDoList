@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
+
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     './src/script/index.jsx'
@@ -17,19 +18,22 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
         include: path.join(__dirname, 'src/script')
       },
       {
         test: /\.scss?$/,
-        loader: ExtractTextPlugin.extract('css!sass'),
-	include: path.join(__dirname, 'src/styles')
-      }
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader'),
+      },
+
+        {
+            test: /\.(png|jpg)$/,
+            loader: 'url-loader'
+        }
     ]
   },
  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('style.css')
+     new ExtractTextPlugin({filename :'style.css',  allChunks: true})
   ]
 }
 

@@ -1,0 +1,63 @@
+$ico_height:40px;
+$ico_width:30px;
+
+footer {
+  padding: 20px;
+  background: $bg_color;
+  display: flex;
+}
+
+.footer_title{
+padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  color: #939393;
+}
+
+.footer_contacts_wrapper{
+  width: 70%;
+}
+.footer_media_wrapper{
+  margin-top: 25px;
+
+}
+.footer_icons{
+  margin-top:15px ;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+#map{
+  display: inline-block;
+  float: right;
+  width: 30%;
+  height: 300px;
+}
+.ico1{
+  background: url("../../static/ico1.png") left no-repeat;
+}
+.ico2{
+  background: url("../../static/ico2.png") left no-repeat;
+}
+.ico3{
+  background: url("../../static/ico3.png") left no-repeat;
+}
+.footer_icon{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: $ico_width;
+  width: 30%;
+}
+.footer_icon span{
+  margin: 10px;
+}
+
+.media_ico{
+  font-size: 2em;
+  color: #939393;
+  margin: 15px;
+}
+.media_ico:hover{
+  color: #fff;
+}

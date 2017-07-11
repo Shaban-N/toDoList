@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
-import DropDownMenu from './dropDownMenu.jsx';
-import  Pagination from './Pagination.jsx';
+import DropDownMenu from './DropDownMenu.jsx';
 import Slider from './Slider.jsx';
+import ToDo from './toDo/components/ToDo.jsx';
 
 export default class App extends React.Component {
 
     render() {
         return (
-            <section className="header block">
+            <div>
+            <header className="block">
                 <div className="header_nav_wrapper">
 
                         <img className="banner" src="./static/bunner.jpg" alt="ToDoList"/>
@@ -23,8 +24,9 @@ export default class App extends React.Component {
 
                 </div>
 
-                <Slider />
-                <Pagination />
-            </section>
+            </header>
+            <Slider />
+            <ToDo />
+            </div>
         )}
 }

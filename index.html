@@ -1,15 +1,75 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <title>Final project</title>
+    <title>To Do List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='dist/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="wrapper">
     <div id="root">
     </div>
+
+
+
+
+    <footer class="block">
+        <div class="footer_contacts_wrapper">
+            <h2 class="footer_title">Контакты</h2>
+            <div class="footer_icons">
+                <div class="footer_icon ico2">
+                    <span>
+                        203 Rengstorff Ave<br>
+                        Mountain View, <br>
+                        CA 94043
+                    </span>
+                </div>
+                <div class="footer_icon ico1">
+                    <span>
+                        Клиент-сервис<br>
+                        (044) 502 22 22
+                    </span>
+                </div>
+                <div class="footer_icon ico3">
+                    <span>
+                        Напишите нам
+                    </span>
+                </div>
+            </div>
+            <div class="footer_media_wrapper">
+                <h2 class="footer_title">Оставайтесь на связи</h2>
+                <div>
+                    <a href="https://www.facebook.com" title="Facebook" target="_blank">
+                        <i class="fa fa-facebook-official media_ico" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://plus.google.com" title="G+" target="_blank">
+                        <i class="fa fa-google-plus media_ico" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" title="Linkedin" target="_blank">
+                        <i class="fa fa-linkedin-square media_ico" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com" title="Instagram" target="_blank">
+                        <i class="fa fa-instagram media_ico" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" title="Twitter" target="_blank">
+                        <i class="fa fa-twitter-square media_ico" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://telegram.org/" title="Telegram" target="_blank">
+                        <i class="fa fa-telegram media_ico" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </footer>
+</div>
+
+
 <script src="dist/bundle.js"></script>
+<script src="index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPqn2phwKdbjhZB_qJAHaoHUsPIAIrJzg&callback=initMap"></script>
 </body>
 </html>

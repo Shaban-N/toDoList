@@ -1,8 +1,8 @@
 @import "_reset.scss";
 $block-width:85%;
+$bg_color:#efeded;
 
-
-body,button,input,h1,h2,p,label,a{
+body,button,input,h1,h2,p,label,a,span{
 	font-family: 'Open Sans';
 }
 
@@ -24,15 +24,17 @@ a:hover{
 	cursor:pointer;
 };
 
+.wrapper{
+	width: $block-width;
+	margin: 0 auto;
+}
+
 .input{
 	padding: 5px 10px;
 }
 
 .block{
-	width: $block-width;
-	margin: 0 auto;
-	background-color: #fff;
-	margin-top: 20px;
+    padding: 15px 20px;
 }
 
 
