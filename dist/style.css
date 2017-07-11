@@ -106,7 +106,7 @@ footer {
   background: #efeded;
   display: flex; }
 
-.footer_title {
+.title_left {
   padding: 10px 0;
   border-bottom: 1px solid #fff;
   color: #939393; }
@@ -280,3 +280,28 @@ footer {
 .pagination_wrapper {
   padding: 15px;
   background-color: #fff; }
+
+
+
+#sign_up{
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 10px ;
+}
+
+.sign_up_form_input {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: normal;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+.title_center{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    color: #939393; }

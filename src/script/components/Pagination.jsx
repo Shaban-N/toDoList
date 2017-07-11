@@ -64,6 +64,7 @@ export default class Pagination extends Component {
         return (
 
             <div className="pagination_wrapper">
+                <h2 className="title_left ">Попробуй сейчас</h2>
                 <div className="to-do_wrapper">
                 {
                     currentTodos.map((column) => {
